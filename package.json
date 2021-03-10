@@ -1,0 +1,18 @@
+{
+  "name": "yf-1m",
+  "version": "1.0.0",
+  "description": "Y&F - 1st Month",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "node index.js"
+  },
+  "author": "frg0801@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "3.1.6",
+    "express": "4.17.1",
+    "express-partials": "0.3.0"
+  }
+}
