@@ -14,6 +14,10 @@ app.get('/', (req, res, next) => {
     res.status(200).render('pages/view');
 });
 
+app.get('/hb', (req, res, next) => {
+    res.status(200).json({'hi':'bye'});
+});
+
 // Inicializa el middleware Swagger
 http.createServer(app).listen(serverPort, () => {
     console.log(`El servidor esta escuchando en el puerto ${serverPort}`);
