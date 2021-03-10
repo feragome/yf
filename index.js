@@ -19,6 +19,6 @@ app.get('/hb', (req, res, next) => {
 });
 
 // Inicializa el middleware Swagger
-http.createServer(app).listen(serverPort, () => {
-    console.log(`El servidor esta escuchando en el puerto ${serverPort}`);
+http.createServer(app).listen(process.env.PORT || serverPort, () => {
+    console.log(`El servidor esta escuchando en el puerto ${process.env.PORT || serverPort}`);
 });
